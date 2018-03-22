@@ -1,0 +1,2 @@
+path.config: ./config/pipeline/
+http.port: 8600-8650
