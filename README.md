@@ -1,10 +1,10 @@
 # docker-elk
 
-#Prerequisites
+# Prerequisites
 This project gets all `.json` files and saves on elasticsearch. All files need to be filtred by logstash pipeline or can be used a java dependency to encode all logs entry as json elements
 
 
-##JAVA configuration
+## AVA configuration
 logback-spring.xml example:
 ` 
 <!--This appender will save all records as LOG_FILE.json-->
@@ -29,7 +29,7 @@ Pom.xml example:
 </dependency>
 `
 
-#Tree
+# Tree
 
 * docker-compose - file with docker information
 
@@ -49,16 +49,16 @@ Pom.xml example:
 	* PIPELINES - ./config/pipeline - path from where mount volume which has all pipelines
 	* CONFIG -./config/logstash.yml - Logstash's configuration file
 
-#Run
+# Run
 	docker-compose up
 
 
-#Usage
-	
-##Kibana
+# Usage
+ 	
+## Kibana
 	http://localhost:5601 - acess kibana dash
 
-##Logstash
+## Logstash
 	Enter on logstash docker (docker exec -it <logstashID> bash)
 	on docker execute:
 		
@@ -76,4 +76,3 @@ Pom.xml example:
 
 
 	More on https://www.elastic.co/guide/en/logstash/current/monitoring.html
-
