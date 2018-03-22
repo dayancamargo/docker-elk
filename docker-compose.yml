@@ -13,7 +13,7 @@ services:
       - elk
 
   kibana:
-    image: docker.elastic.co/kibana/kibana-oss:$TAG
+    image: docker.elastic.co/kibana/kibana-oss:${TAG}
     ports:
       - "5601:5601"
     networks:
